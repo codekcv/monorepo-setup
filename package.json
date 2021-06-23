@@ -1,0 +1,20 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "server:dev": "lerna run --scope server start",
+    "server:test": "lerna run --scope server test",
+    "client:dev": "lerna run --scope client start",
+    "client:test": "lerna run --scope client test",
+    "start": "lerna run start",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
